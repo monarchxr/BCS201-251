@@ -1,4 +1,5 @@
 //LAB 1 QUESTION 3
+//convert given temperature
 
 #include <stdio.h>
 #include <string.h>
