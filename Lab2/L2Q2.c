@@ -1,3 +1,6 @@
+//LAB 2 Question 2
+//calculate gross salary from basic salary,hra,da etc.
+
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
