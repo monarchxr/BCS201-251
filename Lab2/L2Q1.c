@@ -1,3 +1,6 @@
+//LAB 2 Question 1
+//calculate simple and compound interest
+
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
