@@ -1,3 +1,6 @@
+//LAB 2 Question 3
+//Leap year check
+
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
