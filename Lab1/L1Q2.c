@@ -1,4 +1,5 @@
 //LAB 1 QUESTION 2
+//Print sum and difference of 2 integers and 2 floating points
 
 #include <stdio.h>
 #include <string.h>
@@ -7,7 +8,7 @@
 
 int main()
 {
-	int n,m;
+    int n,m;
     float a,b;
     
     scanf("%d %d", &n, &m);
