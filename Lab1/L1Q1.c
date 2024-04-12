@@ -1,4 +1,5 @@
 //LAB - 1 QUESTION 1
+//Swap two numbers without using 3rd variable
 
 #include <stdio.h>
 #include <string.h>
