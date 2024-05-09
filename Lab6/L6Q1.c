@@ -15,6 +15,8 @@ int main(){
         int count = 0;
         int digit = 0, digitpsum = 0;
 
+        //to count digits without loop use: int count = (int) log10(n)+1;
+        
         while(temp!=0){
             temp/=10;
             count++;
