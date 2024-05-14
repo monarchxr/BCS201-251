@@ -1,5 +1,3 @@
-//program to print digits of a number in one line
-
 #include <stdio.h>
 int main() {
     int a, b, temp = 0;
@@ -8,28 +6,40 @@ int main() {
         temp = a % 10 + (temp * 10);
         a = a / 10;
     }
-    while (temp >= 1) {
+    while (temp != 0) {
         b = temp % 10;
-        if (b == 0)
-            printf("Zero ");
-        if (b == 1)
-            printf("One ");
-        if (b == 2)
-            printf("Two ");
-        if (b == 3)
-            printf("Three ");
-        if (b == 4)
-            printf("Four ");
-        if (b == 5)
-            printf("Five ");
-        if (b == 6)
-            printf("Six ");
-        if (b == 7)
-            printf("Seven ");
-        if (b == 8)
-            printf("Eight ");
-        if (b == 9)
-            printf("Nine ");
+        switch(b){
+            case 0:
+                printf("Zero ");
+                break;
+            case 1:
+                printf("One ");
+                break;
+            case 2:
+                printf("Two ");
+                break;
+            case 3:
+                printf("Three ");
+                break;
+            case 4:
+                printf("Four ");
+                break;
+            case 5:
+                printf("Five ");
+                break;
+            case 6:
+                printf("Six ");
+                break;
+            case 7:
+                printf("Seven ");
+                break;
+            case 8:
+                printf("Eight ");
+                break;
+            case 9:
+                printf("Nine ");
+                break;
+        }
 
         temp = temp / 10;
     }
