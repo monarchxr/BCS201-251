@@ -1,14 +1,35 @@
-//function for left half pyramid
+//program to find strong numbers less than n
+//without recursion
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
-void staircase(int n) {
-    int i,j,k;
-    for(i=0; i<n; i++){
-        for(j=0; j<n-i-1; j++){
-            printf(" ");
-        }
-        for(k=0; k<=i; k++){
-            printf("#");
-        }
-    printf("\n");
+int fact(int n){
+    int i,res=1;
+    for(i=2; i<=n; i++){
+        res*=i;
     }
-} 
+    return res;
+}
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int i,n,temp,sum,digit;
+    scanf("%d", &n);
+    
+    for(i=1; i<=n; i++){
+        temp = i;
+        sum = 0;
+        while(temp!=0){
+            digit = temp%10;
+            sum += fact(digit);
+            temp/=10;
+        }
+        if(sum==i){
+            printf("%d ", i);
+        }
+    }
+    return 0;
+}
